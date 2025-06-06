@@ -122,11 +122,26 @@ button:hover {
     text-transform: uppercase;
 }
 
+.carrousel {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.carrousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
 /* ==================================================
    SEÇÕES GERAIS
 ================================================== */
 .section,
 .sec-1,
+.sec-4,
 .feedbacks-img,
 .footer-container {
     display: flex;
@@ -269,7 +284,23 @@ details[open] {
     opacity: 1;
     transform: translateY(0);
 }
+/* ==================================================
+   Sec-4
+================================================== */
+.sec-4-content{
+    columns: 2;
 
+}
+.sec-4-oferta {
+    text-align: justify;
+}
+.sec-4-oferta h3{
+    font-weight: 600;
+}
+
+.sec-4-cta {
+    font-weight: bold;
+}
 /* ==================================================
    RODAPÉ
 ================================================== */

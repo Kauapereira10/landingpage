@@ -126,7 +126,7 @@ setTimeout(() => {
     <h4 style="margin-top: 0;">🎁 Oferta Especial!</h4>
     <p>Ganhe uma planilha exclusiva se comprar nas próximas horas!</p>
     <button id="fecharPopup" style="
-      background-color: #1d7373;
+      background-color: var(--cor-secundaria);
       color: white;
       padding: 5px 10px;
       border: none;
@@ -150,6 +150,25 @@ setTimeout(() => {
     popup.remove();
   };
 }, 20000);
+
+
+// Carrouse da lista de beneficios
+const imagens = [
+  "assets/img/beneficios (1).jpg",
+    "assets/img/beneficios (2).jpg",
+    "assets/img/beneficios (3).jpg",
+    "assets/img/beneficios (4).png"
+];
+
+let index = 0;
+const carrouselImage = document.getElementById("carrousel-image");
+
+function trocarImagem() {
+  index = (index + 1) % imagens.length;
+  carrouselImage.src = imagens[index];
+}
+
+setInterval(trocarImagem, 3000);
 
 // Validação de Formulário (Opcional para quando tiver formulário)
 // const form = document.getElementById('formulario');

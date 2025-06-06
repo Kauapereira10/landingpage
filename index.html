@@ -49,10 +49,10 @@
 
     <div class="sec-1-image">
         <picture>
-            <source srcset="./assets/img/problema-solucao-desorganizado.jpg" media="(min-width: 1024px)" />
-            <source srcset="./assets/img/problema-solucao-desorganizado.jpg" media="(min-width: 768px)" />
-            <source srcset="./assets/img/problema-solucao-desorganizado.jpg" media="(max-width: 767px)" />
-            <img src="./assets/img/problema-solucao-desorganizado.jpg" alt="Banner ilustrando desorganização" />
+            <source srcset="./assets/img/sobrecarregado.jpg" media="(min-width: 1024px)" />
+            <source srcset="./assets/img/sobrecarregado.jpg" media="(min-width: 768px)" />
+            <source srcset="./assets/img/sobrecarregado.jpg" media="(max-width: 767px)" />
+            <img src="./assets/img/sobrecarregado.jpg" alt="Banner ilustrando desorganização" />
         </picture>
     </div>
 </section>
@@ -80,16 +80,9 @@
 
     <!-- Benefícios -->
     <section class="section reveal">
-        <picture class="picture-img-02">
-            <!-- Imagem para telas grandes (desktop) -->
-            <source srcset="assets/img/header.png" media="(min-width: 1024px)" />
-            <!-- Imagem para telas médias (tablet) -->
-            <source srcset="assets/img/" media="(min-width: 768px)" />
-            <!-- Imagem para telas pequenas (mobile) -->
-            <source srcset="assets/img/" media="(max-width: 767px)" />
-            <!-- Imagem padrão (fallback) -->
-            <img src="/assets/" alt="Banner promocional" style="width: 100%; height: auto" />
-        </picture>
+        <div class="carrousel">
+            <img id="carrousel-image" src="assets/img/beneficios (1).jpg" alt="imagem carrousel">
+        </div>
 
 
         <div class="lista-beneficios reveal">
@@ -124,18 +117,6 @@
                     <img src="https://feliperochafsc.com.br/bootcamp/wp-content/uploads/2025/05/FEEDBACK-3.webp" alt="feedback 3">
                 </div>
             </div>
-            <!-- <blockquote>
-                “Antes eu me sentia perdido com tantas tarefas. Hoje, consigo organizar meu dia e tenho muito mais tempo pra mim. Simplesmente incrível!”
-                — Marcos S.
-            </blockquote>
-            <blockquote>
-                “Achei que seria mais um curso teórico, mas na primeira semana já consegui aplicar tudo e ver resultados.”
-                — Amanda L.
-            </blockquote>
-            <blockquote>
-                “Achei que seria mais um curso teórico, mas na primeira semana já consegui aplicar tudo e ver resultados.”
-                — João L.
-            </blockquote> -->
 
             <p>Vai ficar de fora? Pegue o seu ingresso e adicione esse projeto ao seu portfólio!</p>
         </div>
@@ -184,18 +165,22 @@
     <hr>
 
     <!-- Resumo da Oferta e CTA -->
-    <secton id="oferta" class="reveal">
-        <h3>Garanta seu acesso hoje mesmo!</h3>
-
-        <p>✔️ Método completo de organização e produtividade<br>
-            ✔️ Planilha bônus de acompanhamento<br>
-            ✔️ Suporte exclusivo<br>
-            ✔️ Acesso vitalício<br>
-            ✔️ Garantia de 7 dias
-        </p>
-
-        <h2>👉 Garanta sua vaga agora clicando no botão abaixo!</h2>
-        <a href="#"><button class="btn-button">Quero Aumentar Minha Produtividade!</button></a>
+    <secton id="oferta" class="reveal sec-4">
+        <div class="sec-4-content">
+            <div class="sec-4-oferta">
+                <h3>Garanta seu acesso hoje mesmo!</h3>
+                <p>✔️ Método completo de organização e produtividade<br>
+                    ✔️ Planilha bônus de acompanhamento<br>
+                    ✔️ Suporte exclusivo<br>
+                    ✔️ Acesso vitalício<br>
+                    ✔️ Garantia de 7 dias
+                </p>
+            </div>
+            <div class="sec-4-cta">
+                <h2>👉 Garanta sua vaga agora clicando no botão abaixo!</h2>
+                <a href="#"><button class="btn-button">Quero Aumentar Minha Produtividade!</button></a>
+            </div>
+        </div>
     </secton>
 
     <!-- <form id="formulario">
@@ -210,18 +195,19 @@
         <div class="footer">
             <div class="footer-container">
                 <div class="footer-mentor">
-                    <img src="https://feliperochafsc.com.br/bootcamp/wp-content/uploads/2025/05/FELIPE.webp" alt="Imagem do Mentor" class="mentor-image">
+                    <img src="./assets/img/eu.jfif" class="mentor-image">
 
                 </div>
                 <div class="footer-info">
-                    <h2 class="footer-title">✦ SEU MENTOR</h2>
-                    <h3 class="footer-subtitle">Quem será seu mentor?</h3>
+                    <h2 class="footer-title">✦ Desenvolvido por Kauã Pereira</h2>
+                    <h3 class="footer-subtitle">Quem sou eu?</h3>
                     <p class="footer-descripition">
-                        Felipe Rocha descobriu o universo da programação com 11 anos, buscando criar um servidor de jogo.
-                        Aos 16, mergulhou no desenvolvimento web e, aos 22, soma mais de 6 anos de experiência como
-                        desenvolvedor Full Stack. Cresceu de Júnior a Pleno em 9 meses, hoje atua como Full Stack Engineer 
-                        para uma empresa da Inglaterra. Agora, compartilha seu método exclusivo para quem quer se tornar 
-                        um profissional disputado no mercado.
+                        Sou um jovem de 19 anos, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e 
+                        sempre em busca de evolução. Estou construindo meu caminho na programação com foco em desenvolvimento 
+                        web e backend, estudando linguagens como JavaScript, TypeScript, Node.js, React, entre outras. 
+                        Atualmente, busco minha primeira oportunidade como estagiário para aplicar meus conhecimentos na prática 
+                        e crescer dentro de uma empresa. Acredito no poder do aprendizado contínuo e da dedicação para alcançar 
+                        grandes resultados.
                     </p>
                 </div>
             </div>
